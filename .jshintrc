@@ -5,7 +5,8 @@
   "expr": true,
   "trailing": true,
   "node": true,
-  "esnext": true,
+  "undef": true,
+  "esversion": 6,
   "globals": {
     "describe": true,
     "it": true,
