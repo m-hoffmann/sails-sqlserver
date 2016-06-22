@@ -1,7 +1,7 @@
 {
-  "private": true,
-  "name": "sails-sqlserver",
-  "version": "0.10.9",
+  "private": false,
+  "name": "sails-sqlserver-ps",
+  "version": "0.11.0",
   "description": "MS SQL Server Adapter for Sails / Waterline",
   "main": "lib/adapter.js",
   "scripts": {
@@ -10,6 +10,9 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/m-hoffmann/sails-sqlserver.git"
+  },
+ "publishConfig" : {
+    "registry" : "http://repo.ps.lan:8081/repository/npmPlansoft/"
   },
   "keywords": [
     "cnect",
@@ -26,7 +29,7 @@
     "mssql",
     "sqlserver"
   ],
-  "author": "Travis Webb <tjwebb@cnectdata.com>",
+  "author": "Markus Hoffmann <mhoffmann@plansoft.de>",
   "contributors": [
     "balderdashy",
     "Stuart Welham",
