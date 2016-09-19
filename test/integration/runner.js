@@ -46,6 +46,11 @@ var connection = new mssql.Connection({
     password: process.env.MSSQL_PASSWORD,
     server: process.env.MSSQL_HOST,
     database: process.env.MSSQL_DATABASE,
+    pool: {
+      min: 0,
+      max: 10,
+      idleTimeout: 300 * 1000
+    }
   }, function (err) {
     if (err) throw err;
 
@@ -70,7 +75,7 @@ var connection = new mssql.Connection({
     ].join(' '), function (err, results) {
       if (err) throw err;
       console.log('Starting test runner...');
-      
+
       new TestRunner({
 
         mocha: {

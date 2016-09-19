@@ -8,3 +8,4 @@ ssl
 .idea
 nbproject
 npm-debug.log
+test2/credentials.json
